@@ -1,0 +1,22 @@
+Objects
+Do not have order
+Use when you need fast access/ insertion and removal
+let things  ={
+    food: 'meat',
+    sport: 'volleyball',
+    hobby: 'reading'
+}
+Insertion - O(1)
+Removal - O(1)
+Searching - O(N) (uses value)
+Access - O(1)
+
+Object Methods
+Object.keys - O(N)
+Object.entries - O(N)
+Object.values - O(N)
+hasOwnProperty - O(1)
+
+
+
+
