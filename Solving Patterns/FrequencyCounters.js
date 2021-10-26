@@ -59,7 +59,31 @@ function same(arr1, arr2) {
     return true;
 }
 
+//Frequency counter anagram
+function validAnagram(text1, text2) {
+    if (text1.length !== text2.length) {
+        return false
+    }
 
+    const objContainer = {};
+
+    for (let i = 0; i < text1.length; i++) {
+        const element = text1[i];
+        //if letter exists, increment otherwisw set to 1
+        objContainer[element] ? objContainer[element] += 1 : objContainer[element] = 1;
+    }
+    console.log(objContainer);
+    for (let i = 0; i < text2.length; i++) {
+        const element = text2[i];
+        //can't find letter or letter is zero then it's not an anagram
+        if (!objContainer[element]) {
+            return false
+        } else {
+            objContainer[element] -= 1;
+        }
+    }
+    return true;
+}
 
 
 
