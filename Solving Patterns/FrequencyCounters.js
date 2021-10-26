@@ -59,6 +59,7 @@ function same(arr1, arr2) {
     return true;
 }
 
+
 //Frequency counter anagram
 function validAnagram(text1, text2) {
     if (text1.length !== text2.length) {
